@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Character Rankings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 style="text-align:center">Dragon Ball Info</h1>
+
+<a href="index.html" class="button-link">Power Levels</a>
+<a href="multipliers.html" class="button-link">Multipliers</a>
+
+<div id="info-container">
+    <div class="info-box">
+        <h2>Kilis To Power Levels</h2>
+        <p>
+            To be able to calculate most of the power levels in Dragon Ball Z I used the 2nd power system introduced in
+            the Buu Saga, that being Kilis. We get 3 confirmed Kili counts in the anime, those being: <br>
+            - Super Saiyan Goku: 3,000 (This will later be proved to not be accurate, but it is still useful here) <br>
+            - Yakon: 800 <br>
+            - Dabura: 4,000 <br> <br>
+            If we believe that Power Levels and Kilis are linear then we can use the canonical Super Saiyan multiplier
+            of 50 to work out that Base Goku has a Kili count of 60. Which doesn't make sense since we see Base Goku beating
+            Yakon before they are sent to his homeworld (Power Levels should not be affected by your environment). A better
+            estimate for Goku's Kili count in Base would be 1,000 as it is still stronger than Yakon (also it is a nice number),
+            this means that in Kilis the Super Saiyan multiplier is 3x Base. This means that the relationship between Kilis
+            and Power Levels is exponential and not linear. We can show this relationship and work it out using logarithms: <br>
+            3<sup>x</sup> = 50 <br>
+            log(50) / log(3) = 3.560876795... <br> <br>
+            This means that we can convert any Kili count into a power level. I have done it with the confirmed ones: <br>
+            - Super Saiyan Goku: 2.6 Trillion (This is not used as Goku was massively supressing his power) <br>
+            - Yakon: 23 Billion <br>
+            - Dabura: 6.7 Trillion <br> <br>
+            This is the basis for all the other power levels on this list.
+        </p>
+    </div>
+</div>
+
+</body>
+</html>
