@@ -8,11 +8,21 @@
 
 <h1 style="text-align:center">Dragon Ball All Power Levels</h1>
 
-<a href="multipliers.html" class="button-link">Multipliers</a><br></br>
+<a href="multipliers.html" class="button-link">Multipliers</a>
+<a href="info.html" class="button-link">Info</a><br></br>
 
-<a href="dbheroes.html" class="button-link">Dragon Ball Heroes</a><br></br>
+<div class="filter-mode-switch">
+    <span>Saga</span>
+    <label class="switch">
+        <input type="checkbox" id="filter-mode-toggle" onchange="switchFilterMode(this.checked)">
+        <span class="slider"></span>
+    </label>
+    <span>Series</span>
+</div>
 
 <div id="saga-filter-menu"></div>
+
+<div id="series-filter-menu" style="display:none"></div>
 
 <div id="character-filter-menu"></div>
 
@@ -27,6 +37,7 @@
             const response = await fetch('powerlevels.json');
             allCharacters = await response.json();
             createSagaFilterMenu();
+            createSeriesFilterMenu();
             renderDisplay(allCharacters);
         } catch (error) {
             console.error("Error loading characters:", error);
@@ -36,60 +47,84 @@
     function createSagaFilterMenu() {
         const menu = document.getElementById('saga-filter-menu');
         const orderedCategories = [
-            'Shadow Dragon Saga',
-            'Super 17 Saga',
-            'Baby Saga',
-            'Black Star Dragonball Saga',
-            'End of Z Saga',
-            'Superhero Movie',
-            'Granolah Saga',
-            'Galactic Patrol Saga',
-            'Broly Movie',
-            'Tournament of Power Saga',
-            'Future Trunks Saga',
-            'Universe 6 Tournament Saga',
-            'Resurrection F Saga',
-            'Battle of Gods Saga',
-            'Daima Saga',
-            'Wrath of the Dragon',
-            'Fusion Saga',
-            'Buu Saga',
-            'Broly - Second Coming',
-            'Bojack Unbound',
-            'Other World Tournament Saga',
-            'Cell Games Saga',
-            'Plan to Eradicate The Saiyans',
-            'Broly The Legendary Super Saiyan',
-            'Super Android 13',
-            'The Return of Cooler',
-            'Cell Saga',
-            'Android Saga',
-            'Coolers Revenge',
-            'Trunks Saga',
-            'The History of Trunks',
-            'Garlic Jr Saga',
-            'Frieza Saga',
-            'Lord Slug',
-            'Namek Saga',
-            'The Tree of Might',
-            'The Worlds Strongest',
-            'Saiyan Saga',
-            'Raditz Saga',
-            'Dead Zone',
-            'Piccolo Jr Saga',
-            'King Piccolo Saga',
-            'Tien Shinhan Saga',
-            'Fortuneteller Baba Saga',
-            'Red Ribbon Army Saga',
-            'Tournament Saga',
-            'Emperor Pilaf Saga',
-            'Bardock - The Father of Goku',
+            { name: 'Shadow Dragon Saga', color: '#B42B2B' },
+            { name: 'Super 17 Saga', color: '#B42B2B' },
+            { name: 'Baby Saga', color: '#B42B2B' },
+            { name: 'Black Star Dragonball Saga', color: '#B42B2B' },
+            { name: 'End of Z Saga', color: '#ea841b' },
+            { name: 'Superhero Movie', color: '#7982EA' },
+            { name: 'Granolah Saga', color: '#7982EA' },
+            { name: 'Galactic Patrol Saga', color: '#7982EA' },
+            { name: 'Broly Movie', color: '#7982EA' },
+            { name: 'Tournament of Power Saga', color: '#7982EA' },
+            { name: 'Future Trunks Saga', color: '#7982EA' },
+            { name: 'Universe 6 Tournament Saga', color: '#7982EA' },
+            { name: 'Resurrection F Saga', color: '#7982EA' },
+            { name: 'Battle of Gods Saga', color: '#7982EA' },
+            { name: 'Daima Saga', color: '#9E64E0' },
+            { name: 'Wrath of the Dragon', color: '#98B17B' },
+            { name: 'Fusion Saga', color: '#ea841b' },
+            { name: 'Buu Saga', color: '#ea841b' },
+            { name: 'Broly - Second Coming', color: '#98B17B' },
+            { name: 'Bojack Unbound', color: '#98B17B' },
+            { name: 'Other World Tournament Saga', color: '#ea841b' },
+            { name: 'Cell Games Saga', color: '#ea841b' },
+            { name: 'Plan to Eradicate The Saiyans', color: '#98B17B' },
+            { name: 'Broly The Legendary Super Saiyan', color: '#98B17B' },
+            { name: 'Super Android 13', color: '#98B17B' },
+            { name: 'The Return of Cooler', color: '#98B17B' },
+            { name: 'Cell Saga', color: '#ea841b' },
+            { name: 'Android Saga', color: '#ea841b' },
+            { name: 'Coolers Revenge', color: '#98B17B' },
+            { name: 'Trunks Saga', color: '#ea841b' },
+            { name: 'The History of Trunks', color: '#98B17B' },
+            { name: 'Garlic Jr Saga', color: '#ea841b' },
+            { name: 'Frieza Saga', color: '#ea841b' },
+            { name: 'Lord Slug', color: '#98B17B' },
+            { name: 'Namek Saga', color: '#ea841b' },
+            { name: 'The Tree of Might', color: '#98B17B' },
+            { name: 'The Worlds Strongest', color: '#98B17B' },
+            { name: 'Saiyan Saga', color: '#ea841b' },
+            { name: 'Raditz Saga', color: '#ea841b' },
+            { name: 'Dead Zone', color: '#98B17B' },
+            { name: 'Piccolo Jr Saga', color: '#C6C485' },
+            { name: 'King Piccolo Saga', color: '#C6C485' },
+            { name: 'Tien Shinhan Saga', color: '#C6C485' },
+            { name: 'Fortuneteller Baba Saga', color: '#C6C485' },
+            { name: 'Red Ribbon Army Saga', color: '#C6C485' },
+            { name: 'Tournament Saga', color: '#C6C485' },
+            { name: 'Emperor Pilaf Saga', color: '#C6C485' },
+            { name: 'Bardock - The Father of Goku', color: '#98B17B' },
+            { name: 'Episode of Bardock', color: '#98B17B' },
         ]
         let menuHTML = `<button class="filter-btn" onclick="filterData('all')">Show All</button>`;
         menuHTML += orderedCategories.map(cat => `
-            <button class="filter-btn" onclick="filterData('${cat}')">${cat}</button>
+            <button class="filter-btn" style="background:${cat.color}" onclick="filterData('${cat.name}')">${cat.name}</button>
         `).join('');
         menu.innerHTML = menuHTML;
+    }
+
+    function createSeriesFilterMenu() {
+        const menu = document.getElementById('series-filter-menu');
+        const seriesColors = [
+            { name: 'Dragon Ball GT', color: '#B42B2B' },
+            { name: 'Dragon Ball Super', color: '#7982EA' },
+            { name: 'Dragon Ball Daima', color: '#9E64E0' },
+            { name: 'Dragon Ball Movies', color: '#98B17B' },
+            { name: 'Dragon Ball Z', color: '#ea841b' },
+            { name: 'Original Dragon Ball', color: '#C6C485' },
+        ]
+        let menuHTML = `<button class="filter-btn" onclick="filterBySeries('all')">Show All</button>`;
+        menuHTML += seriesColors.map(series => `
+            <button class="filter-btn" style="background:${series.color}" onclick="filterBySeries('${series.color}')">${series.name}</button>
+        `).join('');
+        menu.innerHTML = menuHTML;
+    }
+
+    function switchFilterMode(seriesMode) {
+        document.getElementById('saga-filter-menu').style.display = seriesMode ? 'none' : '';
+        document.getElementById('series-filter-menu').style.display = seriesMode ? '' : 'none';
+        renderDisplay(allCharacters);
     }
 
     function filterData(category) {
@@ -97,6 +132,15 @@
             renderDisplay(allCharacters);
         } else {
             const filtered = allCharacters.filter(char => char.info === category);
+            renderDisplay(filtered);
+        }
+    }
+
+    function filterBySeries(color) {
+        if (color === 'all') {
+            renderDisplay(allCharacters);
+        } else {
+            const filtered = allCharacters.filter(char => char.border.toUpperCase() === color.toUpperCase());
             renderDisplay(filtered);
         }
     }
