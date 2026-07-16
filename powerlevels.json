@@ -16,7 +16,7 @@
     "border": "#7982EA"
   },
   {
-    "powerlevel": "750 Quattuordecillion",
+    "powerlevel": "790 Quattuordecillion",
     "name": "Goku",
     "image": "https://static.wikia.nocookie.net/dragonball/images/a/a9/Ultra_Instinct_Giant2.png/revision/latest?cb=20230602112751",
     "form": "Mastered Ultra Instinct Avatar",
@@ -3880,6 +3880,14 @@
     "border": "#98B17B"
   },
   {
+    "powerlevel": "1,350",
+    "name": "Goku",
+    "image": "https://comicvine.gamespot.com/a/uploads/scale_super/11138/111386707/7003752-1184962903-maxre.jpg",
+    "form": "Great Ape",
+    "info": "Tournament Saga",
+    "border": "#C6C485"
+  },
+  {
     "powerlevel": "1,307",
     "name": "Gohan",
     "image": "https://static0.cbrimages.com/wordpress/wp-content/uploads/2020/08/gohan-vs-raditz.jpg?q=50&fit=crop&w=825&dpr=1.5",
@@ -3926,6 +3934,14 @@
     "form": "Base",
     "info": "Saiyan Saga",
     "border": "#ea841b"
+  },
+  {
+    "powerlevel": "417",
+    "name": "Master Roshi",
+    "image": "https://static.wikia.nocookie.net/dragonball/images/2/23/Moon-Destroying_Kamehameha.png/revision/latest?cb=20250121025015",
+    "form": "Max Power",
+    "info": "Tournament Saga",
+    "border": "#C6C485"
   },
   {
     "powerlevel": "416",
@@ -4048,14 +4064,6 @@
     "border": "#C6C485"
   },
   {
-    "powerlevel": "190",
-    "name": "Korin",
-    "image": "https://static.wikia.nocookie.net/dragonball/images/f/fe/KorinBuuSagaNV.png/revision/latest?cb=20100513171706",
-    "form": "Base",
-    "info": "Red Ribbon Army Saga",
-    "border": "#C6C485"
-  },
-  {
     "powerlevel": "180",
     "name": "Tien",
     "image": "https://static.wikia.nocookie.net/perfect-power-level-list/images/8/8b/Tien_Saga.png/revision/latest?cb=20230520022622",
@@ -4080,12 +4088,60 @@
     "border": "#ea841b"
   },
   {
+    "powerlevel": "168",
+    "name": "Goku",
+    "image": "https://static0.cbrimages.com/wordpress/wp-content/uploads/2025/05/goku-versus-commander-black-3.png?q=70&fit=contain&w=750&h=422&dpr=1",
+    "form": "Base",
+    "info": "Red Ribbon Army Saga",
+    "border": "#C6C485"
+  },
+  {
+    "powerlevel": "155",
+    "name": "Taopaipai",
+    "image": "https://static.wikia.nocookie.net/dragonuniverse/images/6/62/Taopaipai_flying.png/revision/latest?cb=20171203031439",
+    "form": "Base",
+    "info": "Red Ribbon Army Saga",
+    "border": "#C6C485"
+  },
+  {
+    "powerlevel": "140",
+    "name": "Goku",
+    "image": "https://preview.redd.it/making-a-rr-army-saga-campaign-concept-and-i-made-a-kit-for-v0-sxvi7pgz04bc1.jpg?width=640&format=pjpg&auto=webp&s=93cbb2df43ae079d1b1d9c68330cb0dda772a97d",
+    "form": "Base",
+    "info": "Red Ribbon Army Saga",
+    "border": "#C6C485"
+  },
+  {
     "powerlevel": "139",
     "name": "Master Roshi",
     "image": "https://static.wikia.nocookie.net/teamfourstar/images/3/39/MasterRoshi.png/revision/latest/thumbnail/width/360/height/450?cb=20160405222915",
     "form": "Base",
     "info": "Raditz Saga",
     "border": "#ea841b"
+  },
+  {
+    "powerlevel": "139",
+    "name": "Master Roshi",
+    "image": "https://static.wikia.nocookie.net/dragonball/images/9/97/Jackie_prepares_his_next_move_against_Goku.png/revision/latest/scale-to-width-down/250?cb=20250121021103",
+    "form": "Base",
+    "info": "Tournament Saga",
+    "border": "#C6C485"
+  },
+  {
+    "powerlevel": "135",
+    "name": "Goku",
+    "image": "https://m.media-amazon.com/images/M/MV5BYjc2ZTZmZTktYmQyMy00N2JmLWIzZjktMzg2OTdiZjMwNjgxXkEyXkFqcGc@._V1_.jpg",
+    "form": "Base",
+    "info": "Tournament Saga",
+    "border": "#C6C485"
+  },
+  {
+    "powerlevel": "125",
+    "name": "Master Roshi",
+    "image": "https://practicaltyping.com/wp-content/uploads/2020/09/roshi.png",
+    "form": "Base",
+    "info": "Emperor Pilaf Saga",
+    "border": "#C6C485"
   },
   {
     "powerlevel": "120",
@@ -4096,9 +4152,17 @@
     "border": "#C6C485"
   },
   {
+    "powerlevel": "120",
+    "name": "General Blue",
+    "image": "https://static.wikia.nocookie.net/dragonball/images/5/5a/General_Blue_DB_Ep_48_001.png/revision/latest/scale-to-width/360?cb=20241005211129",
+    "form": "Base",
+    "info": "Red Ribbon Army Saga",
+    "border": "#C6C485"
+  },
+  {
     "powerlevel": "100",
     "name": "Goku",
-    "image": "https://static.wikia.nocookie.net/dragonball/images/5/50/Great_Ape_Gohan.png/revision/latest/scale-to-width-down/985?cb=20260106192751",
+    "image": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2025/12/great-ape-goku-about-to-eat-bulma.jpg?q=49&fit=crop&w=825&dpr=2",
     "form": "Great Ape",
     "info": "Emperor Pilaf Saga",
     "border": "#C6C485"
