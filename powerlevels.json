@@ -1,41 +1,5 @@
 [
   {
-    "powerlevel": "3.6 Septendecillion",
-    "name": "Gogeta",
-    "image": "images/SSJ6-Gogeta.png",
-    "form": "Super Saiyan 6",
-    "info": "Old Saiyan Saga",
-    "border": "#000000",
-    "description": ""
-  },
-  {
-    "powerlevel": "1 Septendecillion",
-    "name": "Naz",
-    "image": "",
-    "form": "Legendary Super Saiyan",
-    "info": "Old Saiyan Saga",
-    "border": "#000000",
-    "description": ""
-  },
-  {
-    "powerlevel": "120 Quindecillion",
-    "name": "Gogeta",
-    "image": "images/SSJ5-Gogeta.png",
-    "form": "Super Saiyan 5",
-    "info": "Old Saiyan Saga",
-    "border": "#000000",
-    "description": ""
-  },
-  {
-    "powerlevel": "100 Quindecillion",
-    "name": "Naz",
-    "image": "images/LSSJ-Naz.png",
-    "form": "Legendary Super Saiyan",
-    "info": "Old Saiyan Saga",
-    "border": "#000000",
-    "description": ""
-  },
-  {
     "powerlevel": "100 Quindecillion",
     "name": "Frieza",
     "image": "https://static.wikia.nocookie.net/dragonball/images/e/ea/Black_Frieza_defeats_Goku_%26_Vegeta_%28manga%29.png/revision/latest/scale-to-width-down/985?cb=20230601205318",
@@ -162,51 +126,6 @@
     "description": ""
   },
   {
-    "powerlevel": "1.5 Tredecillion",
-    "name": "Gogeta",
-    "image": "",
-    "form": "Base",
-    "info": "Old Saiyan Saga",
-    "border": "#000000",
-    "description": ""
-  },
-  {
-    "powerlevel": "512 Duodecillion",
-    "name": "Goku",
-    "image": "images/USSJ-Goku.png",
-    "form": "Ultimate Super Saiyan",
-    "info": "Old Saiyan Saga",
-    "border": "#000000",
-    "description": ""
-  },
-  {
-    "powerlevel": "512 Duodecillion",
-    "name": "Vegeta",
-    "image": "images/USSJ-Vegeta.png",
-    "form": "Ultimate Super Saiyan",
-    "info": "Old Saiyan Saga",
-    "border": "#000000",
-    "description": ""
-  },
-  {
-    "powerlevel": "240 Duodecillion",
-    "name": "Gohan",
-    "image": "images/SSJ6-Gohan.png",
-    "form": "Super Saiyan 6",
-    "info": "Old Saiyan Saga",
-    "border": "#000000",
-    "description": ""
-  },
-  {
-    "powerlevel": "128 Duodecillion",
-    "name": "Goku",
-    "image": "",
-    "form": "Full Power Super Saiyan 5",
-    "info": "Shadow Dragons Saga",
-    "border": "#000000",
-    "description": ""
-  },
-  {
     "powerlevel": "60 Duodecillion",
     "name": "Vegeta",
     "image": "https://i.redd.it/tr4u9bs643gd1.jpeg",
@@ -279,15 +198,6 @@
     "description": ""
   },
   {
-    "powerlevel": "8 Duodecillion",
-    "name": "Goku",
-    "image": "images/SSJ5-Goku.png",
-    "form": "Super Saiyan 5",
-    "info": "Shadow Dragons Saga",
-    "border": "#000000",
-    "description": ""
-  },
-  {
     "powerlevel": "5.5 Duodecillion",
     "name": "Merus",
     "image": "https://static.wikia.nocookie.net/dragonball/images/b/b4/DBS_Chapter_63_09.png/revision/latest/scale-to-width-down/340?cb=20210529050020",
@@ -303,15 +213,6 @@
     "form": "Seven Three Absorbed",
     "info": "Galactic Patrol Saga",
     "border": "#7982EA",
-    "description": ""
-  },
-  {
-    "powerlevel": "3.5 Duodecillion",
-    "name": "Super Su Shrenron",
-    "image": "",
-    "form": "7 Balls Absorbed",
-    "info": "Shadow Dragons Saga",
-    "border": "#000000",
     "description": ""
   },
   {
@@ -348,33 +249,6 @@
     "form": "Super Saiyan Blue Evolved",
     "info": "Galactic Patrol Saga",
     "border": "#7982EA",
-    "description": ""
-  },
-  {
-    "powerlevel": "500 Undecillion",
-    "name": "Super Su Shrenron",
-    "image": "images/Su-Shenron.png",
-    "form": "Base",
-    "info": "Shadow Dragons Saga",
-    "border": "#000000",
-    "description": ""
-  },
-  {
-    "powerlevel": "400 Undecillion",
-    "name": "Goku",
-    "image": "",
-    "form": "Super Saiyan 4",
-    "info": "Shadow Dragons Saga",
-    "border": "#000000",
-    "description": ""
-  },
-  {
-    "powerlevel": "200 Undecillion",
-    "name": "Vegeta",
-    "image": "images/SSJ5-Vegeta.png",
-    "form": "Super Saiyan 5",
-    "info": "Shadow Dragons Saga",
-    "border": "#000000",
     "description": ""
   },
   {
@@ -432,24 +306,6 @@
     "description": ""
   },
   {
-    "powerlevel": "10.5 Undecillion",
-    "name": "Ize",
-    "image": "images/3rd-Ize.png",
-    "form": "Third Form",
-    "info": "Ize Saga",
-    "border": "#000000",
-    "description": ""
-  },
-  {
-    "powerlevel": "5.7 Undecillion",
-    "name": "Ize",
-    "image": "images/2nd-Ize.png",
-    "form": "Second Form",
-    "info": "Ize Saga",
-    "border": "#000000",
-    "description": ""
-  },
-  {
     "powerlevel": "5 Undecillion",
     "name": "Broly",
     "image": "https://static.wikia.nocookie.net/dragonball/images/2/27/SSBroly1.5.png/revision/latest/scale-to-width-down/985?cb=20181129230243",
@@ -459,30 +315,12 @@
     "description": ""
   },
   {
-    "powerlevel": "4 Undecillion",
-    "name": "Vegeta",
-    "image": "images/SSJ4-Vegeta.png",
-    "form": "Super Saiyan 4",
-    "info": "Ize Saga",
-    "border": "#000000",
-    "description": ""
-  },
-  {
     "powerlevel": "3.3 Undecillion",
     "name": "Gogeta",
     "image": "https://preview.redd.it/its-funny-how-it-took-23-years-old-for-us-to-see-base-gogeta-v0-e4umxbv8h3fb1.png?width=1080&crop=smart&auto=webp&s=f97106d14bda4fd725c887e8c544f2aff02d4c15",
     "form": "Base",
     "info": "Broly Movie",
     "border": "#7982EA",
-    "description": ""
-  },
-  {
-    "powerlevel": "3 Undecillion",
-    "name": "Ize",
-    "image": "images/1st-Ize.png",
-    "form": "First Form",
-    "info": "Ize Saga",
-    "border": "#000000",
     "description": ""
   },
   {
