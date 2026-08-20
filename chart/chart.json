@@ -1,0 +1,326 @@
+[
+  {
+    "name": "Perfect Cell (CGS)",
+    "powerlevel": "6.7 Trillion",
+    "border": "#ea841b",
+    "links": [
+      {
+        "to": "Super Perfect Cell (CGS)",
+        "description": "2x"
+      },
+      {
+        "to": "Weighted Pikkon (OWTS)",
+        "description": "1.25x"
+      }
+    ]
+  },
+  {
+    "name": "Dabura (BS)",
+    "powerlevel": "6.7 Trillion",
+    "border": "#ea841b",
+    "links": [
+      {
+        "to": "Perfect Cell (CGS)",
+        "description": "="
+      },
+      {
+        "to": "SSJ Gohan (BS)",
+        "description": "+"
+      }
+    ]
+  },
+  {
+    "name": "SSJ Gohan (BS)",
+    "powerlevel": "6.8 Trillion",
+    "border": "#ea841b",
+    "links": [
+      {
+        "to": "SSJ2 Gohan (BS)",
+        "description": "2x"
+      }
+    ]
+  },
+  {
+    "name": "Olibu (OWTS)",
+    "powerlevel": "7.5 Trillion",
+    "border": "#ea841b",
+    "links": [
+      {
+        "to": "Yamcha (FS)",
+        "description": "+"
+      }
+    ]
+  },
+  {
+    "name": "SSJ Vegeta (BS)",
+    "powerlevel": "8 Trillion",
+    "border": "#ea841b",
+    "links": []
+  },
+  {
+    "name": "Yamcha (FS)",
+    "powerlevel": "8 Trillion",
+    "border": "#ea841b",
+    "links": []
+  },
+  {
+    "name": "Weighted Pikkon (OWTS)",
+    "powerlevel": "8.5 Trillion",
+    "border": "#ea841b",
+    "links": [
+      {
+        "to": "Olibu (OWTS)",
+        "description": "-"
+      },
+      {
+        "to": "Goku (OWTS)",
+        "description": "="
+      }
+    ]
+  },
+  {
+    "name": "Goku (OWTS)",
+    "powerlevel": "8.5 Trillion",
+    "border": "#ea841b",
+    "links": [
+      {
+        "to": "SSJ Goku (OWTS)",
+        "description": "50x"
+      }
+    ]
+  },
+  {
+    "name": "Super Perfect Cell (CGS)",
+    "powerlevel": "13.4 Trillion",
+    "border": "#ea841b",
+    "links": []
+  },
+  {
+    "name": "SSJ2 Gohan (BS)",
+    "powerlevel": "13.6 Trillion",
+    "border": "#ea841b",
+    "links": []
+  },
+  {
+    "name": "SSJ2 Vegeta (BS)",
+    "powerlevel": "16 Trillion",
+    "border": "#ea841b",
+    "links": []
+  },
+  {
+    "name": "Gotenks (FS)",
+    "powerlevel": "18.9 Trillion",
+    "border": "#ea841b",
+    "links": [
+      {
+        "to": "SSJ Gotenks (FS)",
+        "description": "50x"
+      }
+    ]
+  },
+  {
+    "name": "Goku (BS)",
+    "powerlevel": "25 Trillion",
+    "border": "#ea841b",
+    "links": [
+      {
+        "to": "SSJ Goku (BS)",
+        "description": "50x"
+      },
+      {
+        "to": "Gohan (FS)",
+        "description": "+"
+      }
+    ]
+  },
+  {
+    "name": "SSJ2 Gohan (CGS)",
+    "powerlevel": "26 Trillion",
+    "border": "#ea841b",
+    "links": []
+  },
+  {
+    "name": "Gohan (FS)",
+    "powerlevel": "27.4 Trillion",
+    "border": "#ea841b",
+    "links": [
+      {
+        "to": "Ultimate Gohan (FS)",
+        "description": "350x"
+      }
+    ]
+  },
+  {
+    "name": "Pikkon (OWTS)",
+    "powerlevel": "425 Trillion",
+    "border": "#ea841b",
+    "links": []
+  },
+  {
+    "name": "SSJ Goku (OWTS)",
+    "powerlevel": "425 Trillion",
+    "border": "#ea841b",
+    "links": [
+      {
+        "to": "SSJK Goku (OWTS)",
+        "description": "2x"
+      },
+      {
+        "to": "Pikkon (OWTS)",
+        "description": "="
+      }
+    ]
+  },
+  {
+    "name": "Tien (FS)",
+    "powerlevel": "800 Trillion",
+    "border": "#ea841b",
+    "links": []
+  },
+  {
+    "name": "SSJK Goku (OWTS)",
+    "powerlevel": "850 Trillion",
+    "border": "#ea841b",
+    "links": []
+  },
+  {
+    "name": "SSJ Gotenks (FS)",
+    "powerlevel": "945 Trillion",
+    "border": "#ea841b",
+    "links": [
+      {
+        "to": "SSJ3 Gotenks (FS)",
+        "description": "8x"
+      }
+    ]
+  },
+  {
+    "name": "SSJ Goku (BS)",
+    "powerlevel": "1.3 Quadrillion",
+    "border": "#ea841b",
+    "links": []
+  },
+  {
+    "name": "SSJ2 Goku (BS)",
+    "powerlevel": "2.6 Quadrillion",
+    "border": "#ea841b",
+    "links": [
+      {
+        "to": "SSJ3 Goku (BS)",
+        "description": "4x"
+      }
+    ]
+  },
+  {
+    "name": "Majin Vegeta (BS)",
+    "powerlevel": "2.7 Quadrillion",
+    "border": "#ea841b",
+    "links": []
+  },
+  {
+    "name": "Majin Buu (BS)",
+    "powerlevel": "4 Quadrillion",
+    "border": "#ea841b",
+    "links": []
+  },
+  {
+    "name": "Evil Buu (BS)",
+    "powerlevel": "5 Quadrillion",
+    "border": "#ea841b",
+    "links": []
+  },
+  {
+    "name": "Super Buu (FS)",
+    "powerlevel": "7 Quadrillion",
+    "border": "#ea841b",
+    "links": [
+      {
+        "to": "Buuccolo (FS)",
+        "description": "+"
+      }
+    ]
+  },
+  {
+    "name": "Buuccolo (FS)",
+    "powerlevel": "7 Quadrillion",
+    "border": "#ea841b",
+    "links": []
+  },
+  {
+    "name": "SSJ3 Gotenks (FS)",
+    "powerlevel": "7.6 Quadrillion",
+    "border": "#ea841b",
+    "links": []
+  },
+  {
+    "name": "Ultimate Gohan (FS)",
+    "powerlevel": "9.6 Quadrillion",
+    "border": "#ea841b",
+    "links": []
+  },
+  {
+    "name": "SSJ3 Goku (BS)",
+    "powerlevel": "10 Quadrillion",
+    "border": "#ea841b",
+    "links": []
+  },
+  {
+    "name": "Kid Buu (FS)",
+    "powerlevel": "10.4 Quadrillion",
+    "border": "#ea841b",
+    "links": []
+  },
+  {
+    "name": "Uub (EOZS)",
+    "powerlevel": "10.4 Quadrillion",
+    "border": "#ea841b",
+    "links": []
+  },
+  {
+    "name": "South Supreme Kai (FS)",
+    "powerlevel": "11 Quadrillion",
+    "border": "#ea841b",
+    "links": []
+  },
+  {
+    "name": "Goku (EOZS)",
+    "powerlevel": "13.8 Quadrillion",
+    "border": "#ea841b",
+    "links": []
+  },
+  {
+    "name": "Buutenks (FS)",
+    "powerlevel": "14.6 Quadrillion",
+    "border": "#ea841b",
+    "links": []
+  },
+  {
+    "name": "Buff Buu (FS)",
+    "powerlevel": "21.4 Quadrillion",
+    "border": "#ea841b",
+    "links": []
+  },
+  {
+    "name": "Buuhan (FS)",
+    "powerlevel": "24.2 Quadrillion",
+    "border": "#ea841b",
+    "links": []
+  },
+  {
+    "name": "Vegito (FS)",
+    "powerlevel": "30 Quadrillion",
+    "border": "#ea841b",
+    "links": [
+      {
+        "to": "SSJ Vegito (FS)",
+        "description": "50x"
+      }
+    ]
+  },
+  {
+    "name": "SSJ Vegito (FS)",
+    "powerlevel": "1.5 Quintillion",
+    "border": "#ea841b",
+    "links": []
+  }
+]

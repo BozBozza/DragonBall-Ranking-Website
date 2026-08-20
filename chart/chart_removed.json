@@ -1,0 +1,800 @@
+[
+  {
+    "name": "Gohan (CGS)",
+    "powerlevel": "6.5 Trillion",
+    "border": "#ea841b",
+    "link": "",
+    "description": "Able to hold his own against Perfect Cell and stated by Goku to be stronger than him"
+  },
+  {
+    "name": "Trunks (BS)",
+    "powerlevel": "6.4 Trillion",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Goten (BS)",
+    "powerlevel": "6.3 Trillion",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Goku (CGS)",
+    "powerlevel": "6 Trillion",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Cell Jr. (CGS)",
+    "powerlevel": "3.4 Trillion",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Vegeta (CGS)",
+    "powerlevel": "1.9 Trillion",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Future Trunks (CGS)",
+    "powerlevel": "1.8 Trillion",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Vegeta (BS)",
+    "powerlevel": "160 Billion",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Piccolo (BS)",
+    "powerlevel": "140 Billion",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Gohan (BS)",
+    "powerlevel": "136 Billion",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Trunks (BS)",
+    "powerlevel": "128 Billion",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Goten (BS)",
+    "powerlevel": "126 Billion",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Piccolo (CGS)",
+    "powerlevel": "120 Billion",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Future Trunks (CS)",
+    "powerlevel": "105 Billion",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Vegeta (CS)",
+    "powerlevel": "93.8 Billion",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Cell (CS)",
+    "powerlevel": "67 Billion",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Goku (CS)",
+    "powerlevel": "60 Billion",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Tien (CS)",
+    "powerlevel": "50 Billion",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Yakon (BS)",
+    "powerlevel": "21.8 Billion",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Pui Pui (BS)",
+    "powerlevel": "10 Billion",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Android 16 (CS)",
+    "powerlevel": "8 Billion",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Cell (CS)",
+    "powerlevel": "6.7 Billion",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Supreme Kai (BS)",
+    "powerlevel": "2 Billion",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Piccolo (CS)",
+    "powerlevel": "1.2 Billion",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Android 17 (CS)",
+    "powerlevel": "1.2 Billion",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Android 18 (CS)",
+    "powerlevel": "1.1 Billion",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Cell (CS)",
+    "powerlevel": "850 Million",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Vegeta (AS)",
+    "powerlevel": "750 Million",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Future Trunks (AS)",
+    "powerlevel": "700 Million",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Goku (AS)",
+    "powerlevel": "700 Million",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Piccolo (AS)",
+    "powerlevel": "545 Million",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Krillin (CS)",
+    "powerlevel": "500 Million",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Android 20 (AS)",
+    "powerlevel": "450 Million",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Android 19 (AS)",
+    "powerlevel": "400 Million",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Goku (TS)",
+    "powerlevel": "300 Million",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Future Trunks (TS)",
+    "powerlevel": "250 Million",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Frieza (TS)",
+    "powerlevel": "160 Million",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Goku (FS)",
+    "powerlevel": "150 Million",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Frieza (FS)",
+    "powerlevel": "120 Million",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "King Cold (TS)",
+    "powerlevel": "100 Million",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Frieza (FS)",
+    "powerlevel": "90 Million",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Gohan (FS)",
+    "powerlevel": "80 Million",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Frieza (FS)",
+    "powerlevel": "60 Million",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Goku (FS)",
+    "powerlevel": "60 Million",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Vegeta (AS)",
+    "powerlevel": "15 Million",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Future Trunks (AS)",
+    "powerlevel": "14 Million",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Goku (AS)",
+    "powerlevel": "14 Million",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Goku (TS)",
+    "powerlevel": "6 Million",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Future Trunks (TS)",
+    "powerlevel": "5 Million",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Yamcha (AS)",
+    "powerlevel": "4 Million",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Vegeta (TS)",
+    "powerlevel": "4 Million",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Frieza (FS)",
+    "powerlevel": "3.2 Million",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Goku (FS)",
+    "powerlevel": "3 Million",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Vegeta (FS)",
+    "powerlevel": "2.5 Million",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Frieza (FS)",
+    "powerlevel": "2 Million",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Piccolo (FS)",
+    "powerlevel": "1.5 Million",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Frieza (FS)",
+    "powerlevel": "1 Million",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Frieza (FS)",
+    "powerlevel": "530,000",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Vegeta (FS)",
+    "powerlevel": "250,000",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Goku (NS)",
+    "powerlevel": "180,000",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Vegeta (SS)",
+    "powerlevel": "180,000",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Captain Ginyu (NS)",
+    "powerlevel": "120,000",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Goku (NS)",
+    "powerlevel": "90,000",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Krillin (FS)",
+    "powerlevel": "75,000",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Tien (FS)",
+    "powerlevel": "60,000",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Yamcha (FS)",
+    "powerlevel": "45,000",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Burter (NS)",
+    "powerlevel": "43,000",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Jeice (NS)",
+    "powerlevel": "42,000",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Nail (NS)",
+    "powerlevel": "42,000",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Recoome (NS)",
+    "powerlevel": "40,000",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Goku (SS)",
+    "powerlevel": "32,000",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Vegeta (NS)",
+    "powerlevel": "30,000",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Gohan (SS)",
+    "powerlevel": "28,000",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Zarbon (NS)",
+    "powerlevel": "27,000",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Vegeta (NS)",
+    "powerlevel": "24,000",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Goku (SS)",
+    "powerlevel": "24,000",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Captain Ginyu (NS)",
+    "powerlevel": "23,000",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Zarbon (NS)",
+    "powerlevel": "23,000",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Dodoria (NS)",
+    "powerlevel": "22,000",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Cui (NS)",
+    "powerlevel": "18,000",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Vegeta (SS)",
+    "powerlevel": "18,000",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Goku (SS)",
+    "powerlevel": "16,000",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Gohan (NS)",
+    "powerlevel": "14,000",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Krillin (NS)",
+    "powerlevel": "13,000",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Chiaotzu (FS)",
+    "powerlevel": "12,000",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "King Vegeta (FS)",
+    "powerlevel": "10,000",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Guldo (NS)",
+    "powerlevel": "10,000",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Goku (SS)",
+    "powerlevel": "8,000",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Nappa (SS)",
+    "powerlevel": "4,000",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Gohan (NS)",
+    "powerlevel": "3,800",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Piccolo (SS)",
+    "powerlevel": "3,500",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Krillin (NS)",
+    "powerlevel": "3,000",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Gohan (SS)",
+    "powerlevel": "2,800",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Tien (SS)",
+    "powerlevel": "1,830",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Krillin (SS)",
+    "powerlevel": "1,770",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Raditz (RS)",
+    "powerlevel": "1,500",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Yamcha (SS)",
+    "powerlevel": "1,480",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Gohan (RS)",
+    "powerlevel": "1,307",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Saibermen (SS)",
+    "powerlevel": "1,200",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Spopovich (BS)",
+    "powerlevel": "1,013",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Yamu (BS)",
+    "powerlevel": "1,013",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Chiaotzu (SS)",
+    "powerlevel": "610",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Goku (RS)",
+    "powerlevel": "416",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Piccolo (RS)",
+    "powerlevel": "408",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Tien (RS)",
+    "powerlevel": "250",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Kami (SS)",
+    "powerlevel": "220",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Krillin (RS)",
+    "powerlevel": "206",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Yamcha (RS)",
+    "powerlevel": "177",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Master Roshi (RS)",
+    "powerlevel": "139",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Videl (BS)",
+    "powerlevel": "21",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Mr Satan (CS)",
+    "powerlevel": "7",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Spopovich (BS)",
+    "powerlevel": "6",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Farmer (RS)",
+    "powerlevel": "5",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  },
+  {
+    "name": "Turtle (SS)",
+    "powerlevel": "0.001",
+    "border": "#ea841b",
+    "link": "",
+    "description": ""
+  }
+]
