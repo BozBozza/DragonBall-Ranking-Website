@@ -8,26 +8,18 @@
 
 <h1 style="text-align:center">Dragon Ball All Power Levels</h1>
 
-<a href="multipliers.html" class="button-link">Multipliers</a>
+<a href="multipliers/multipliers.html" class="button-link">Multipliers</a>
 <a href="info.html" class="button-link">Info</a>
-<a href="highball.html" class="button-link">High Ball</a><br>
+<a href="highball/highball.html" class="button-link">High Ball</a>
+<a href="chart/chart.html" class="button-link">Chart</a><br>
 
-<div class="filter-mode-switch">
-    <span>Saga</span>
-    <label class="switch">
-        <input type="checkbox" id="filter-mode-toggle" onchange="switchFilterMode(this.checked)">
-        <span class="slider"></span>
-    </label>
-    <span>Series</span>
-</div>
-
-<div id="saga-filter-menu"></div>
-
-<div id="series-filter-menu" style="display:none"></div>
+<div id="series-filter-menu"></div>
 
 <div id="character-filter-menu"></div>
 
 <div id="character-container"></div>
+
+<div id="wiki-preview"></div>
 
 
 <script>
@@ -37,7 +29,6 @@
         try {
             const response = await fetch('powerlevels.json');
             allCharacters = await response.json();
-            createSagaFilterMenu();
             createSeriesFilterMenu();
             renderDisplay(allCharacters);
         } catch (error) {
@@ -45,119 +36,118 @@
         }
     }
 
-    function createSagaFilterMenu() {
-        const menu = document.getElementById('saga-filter-menu');
-        const orderedCategories = [
-            { name: 'Shadow Dragon Saga', color: '#B42B2B' },
-            { name: 'Super 17 Saga', color: '#B42B2B' },
-            { name: 'Baby Saga', color: '#B42B2B' },
-            { name: 'Black Star Dragonball Saga', color: '#B42B2B' },
-            { name: 'End of Z Saga', color: '#ea841b' },
-            { name: 'Superhero Movie', color: '#7982EA' },
-            { name: 'Granolah Saga', color: '#7982EA' },
-            { name: 'Galactic Patrol Saga', color: '#7982EA' },
-            { name: 'Broly Movie', color: '#7982EA' },
-            { name: 'Tournament of Power Saga', color: '#7982EA' },
-            { name: 'Future Trunks Saga', color: '#7982EA' },
-            { name: 'Universe 6 Tournament Saga', color: '#7982EA' },
-            { name: 'Resurrection F Saga', color: '#7982EA' },
-            { name: 'Battle of Gods Saga', color: '#7982EA' },
-            { name: 'Daima Saga', color: '#9E64E0' },
-            { name: 'Wrath of the Dragon', color: '#98B17B' },
-            { name: 'Fusion Saga', color: '#ea841b' },
-            { name: 'Buu Saga', color: '#ea841b' },
-            { name: 'Broly - Second Coming', color: '#98B17B' },
-            { name: 'Bojack Unbound', color: '#98B17B' },
-            { name: 'Other World Tournament Saga', color: '#ea841b' },
-            { name: 'Cell Games Saga', color: '#ea841b' },
-            { name: 'Plan to Eradicate The Saiyans', color: '#98B17B' },
-            { name: 'Broly The Legendary Super Saiyan', color: '#98B17B' },
-            { name: 'Super Android 13', color: '#98B17B' },
-            { name: 'The Return of Cooler', color: '#98B17B' },
-            { name: 'Cell Saga', color: '#ea841b' },
-            { name: 'Android Saga', color: '#ea841b' },
-            { name: 'Coolers Revenge', color: '#98B17B' },
-            { name: 'Trunks Saga', color: '#ea841b' },
-            { name: 'The History of Trunks', color: '#98B17B' },
-            { name: 'Garlic Jr Saga', color: '#ea841b' },
-            { name: 'Frieza Saga', color: '#ea841b' },
-            { name: 'Lord Slug', color: '#98B17B' },
-            { name: 'Namek Saga', color: '#ea841b' },
-            { name: 'The Tree of Might', color: '#98B17B' },
-            { name: 'The Worlds Strongest', color: '#98B17B' },
-            { name: 'Saiyan Saga', color: '#ea841b' },
-            { name: 'Raditz Saga', color: '#ea841b' },
-            { name: 'Dead Zone', color: '#98B17B' },
-            { name: 'Piccolo Jr Saga', color: '#C6C485' },
-            { name: 'King Piccolo Saga', color: '#C6C485' },
-            { name: 'Tien Shinhan Saga', color: '#C6C485' },
-            { name: 'Fortuneteller Baba Saga', color: '#C6C485' },
-            { name: 'Red Ribbon Army Saga', color: '#C6C485' },
-            { name: 'Tournament Saga', color: '#C6C485' },
-            { name: 'Emperor Pilaf Saga', color: '#C6C485' },
-            { name: 'Bardock - The Father of Goku', color: '#98B17B' },
-            { name: 'Episode of Bardock', color: '#98B17B' },
-        ]
-        let menuHTML = `<button class="filter-btn" onclick="filterData('all')">Show All</button>`;
-        menuHTML += orderedCategories.map(cat => `
-            <button class="filter-btn" style="background:${cat.color}" onclick="filterData('${cat.name}')">${cat.name}</button>
-        `).join('');
-        menu.innerHTML = menuHTML;
-    }
+    const seriesColors = [
+        { name: 'Dragon Ball AF', color: '#000000'},
+        { name: 'Dragon Ball GT', color: '#B42B2B' },
+        { name: 'Dragon Ball Super', color: '#7982EA' },
+        { name: 'Dragon Ball Daima', color: '#9E64E0' },
+        { name: 'Dragon Ball Movies', color: '#98B17B' },
+        { name: 'Dragon Ball Z', color: '#ea841b' },
+        { name: 'Original Dragon Ball', color: '#C6C485' },
+    ];
+    // colours of the series currently toggled on
+    const activeSeries = new Set();
 
     function createSeriesFilterMenu() {
         const menu = document.getElementById('series-filter-menu');
-        const seriesColors = [
-            { name: 'Dragon Ball GT', color: '#B42B2B' },
-            { name: 'Dragon Ball Super', color: '#7982EA' },
-            { name: 'Dragon Ball Daima', color: '#9E64E0' },
-            { name: 'Dragon Ball Movies', color: '#98B17B' },
-            { name: 'Dragon Ball Z', color: '#ea841b' },
-            { name: 'Original Dragon Ball', color: '#C6C485' },
-        ]
-        let menuHTML = `<button class="filter-btn" onclick="filterBySeries('all')">Show All</button>`;
-        menuHTML += seriesColors.map(series => `
-            <button class="filter-btn" style="background:${series.color}" onclick="filterBySeries('${series.color}')">${series.name}</button>
-        `).join('');
-        menu.innerHTML = menuHTML;
+        // every series starts toggled on
+        menu.innerHTML = seriesColors.map(series => {
+            activeSeries.add(series.color.toUpperCase());
+            return `
+            <button class="filter-btn series-toggle active" data-color="${series.color}" style="background:${series.color}" onclick="toggleSeries('${series.color}')">${series.name}</button>
+        `;
+        }).join('');
     }
 
-    function switchFilterMode(seriesMode) {
-        document.getElementById('saga-filter-menu').style.display = seriesMode ? 'none' : '';
-        document.getElementById('series-filter-menu').style.display = seriesMode ? '' : 'none';
-        renderDisplay(allCharacters);
-    }
-
-    function filterData(category) {
-        if (category === 'all') {
-            renderDisplay(allCharacters);
+    function toggleSeries(color) {
+        const key = color.toUpperCase();
+        const btn = document.querySelector(`.series-toggle[data-color="${color}"]`);
+        if (activeSeries.has(key)) {
+            activeSeries.delete(key);
+            btn.style.background = '';
+            btn.classList.remove('active');
         } else {
-            const filtered = allCharacters.filter(char => char.info === category);
-            renderDisplay(filtered);
+            activeSeries.add(key);
+            btn.style.background = color;
+            btn.classList.add('active');
         }
+        applySeriesFilter();
     }
 
-    function filterBySeries(color) {
-        if (color === 'all') {
-            renderDisplay(allCharacters);
-        } else {
-            const filtered = allCharacters.filter(char => char.border.toUpperCase() === color.toUpperCase());
-            renderDisplay(filtered);
-        }
+    function applySeriesFilter() {
+        // nothing toggled on -> show nothing
+        const filtered = allCharacters.filter(char => activeSeries.has(char.border.toUpperCase()));
+        renderDisplay(filtered);
     }
 
     function renderDisplay(dataToShow) {
         const container = document.getElementById('character-container');
 
-        container.innerHTML = dataToShow.map(char => `
+        container.innerHTML = dataToShow.map((char, index) => `
             <div class="character-card" style="border:3px solid ${char.border};">
                 <span class="powerlevel">${char.powerlevel}</span>
-                <img src="${char.image}" style="border:3px solid ${char.border};">
+                <img src="${char.image}" style="border:3px solid ${char.border};" data-index="${index}">
                 <h2>${char.name}</h2>
                 <p>${char.form}</p>
                 <p>${char.info}</p>
             </div>
         `).join('');
+
+        // remember which list is currently on screen, so the preview can look up details
+        currentlyShown = dataToShow;
+    }
+
+    // ---- Wikipedia-style hover preview ----
+    let currentlyShown = [];
+    let previewTimer = null;
+
+    const preview = document.getElementById('wiki-preview');
+
+    document.addEventListener('mouseover', (e) => {
+        const img = e.target.closest('.character-card img');
+        if (!img) return;
+
+        const char = currentlyShown[img.dataset.index];
+        if (!char) return;
+
+        // small delay before showing, like Wikipedia
+        clearTimeout(previewTimer);
+        previewTimer = setTimeout(() => {
+            preview.innerHTML = `
+                <img src="${char.image}">
+                <p>${char.description ?? 'null'}</p>
+            `;
+            positionPreview(img);
+            preview.style.display = 'block';
+        }, 300);
+    });
+
+    document.addEventListener('mouseout', (e) => {
+        const img = e.target.closest('.character-card img');
+        if (!img) return;
+        clearTimeout(previewTimer);
+        preview.style.display = 'none';
+    });
+
+    function positionPreview(img) {
+        const rect = img.getBoundingClientRect();
+        // make it visible but off-screen so we can measure its size
+        preview.style.display = 'block';
+        preview.style.left = '-9999px';
+        const pw = preview.offsetWidth;
+        const ph = preview.offsetHeight;
+
+        // prefer to the right of the image; flip left if it would go off screen
+        let left = rect.right + 12;
+        if (left + pw > window.innerWidth) {
+            left = rect.left - pw - 12;
+        }
+        // vertically centre on the image, but keep it on screen
+        let top = rect.top + rect.height / 2 - ph / 2;
+        top = Math.max(10, Math.min(top, window.innerHeight - ph - 10));
+
+        preview.style.left = left + 'px';
+        preview.style.top = top + 'px';
     }
 
     loadCharacters();

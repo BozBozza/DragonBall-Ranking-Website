@@ -2,13 +2,13 @@
 <html>
 <head>
     <title>Character Rankings</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
-<h1 style="text-align:center">Dragon Ball All Power Levels (High Balled)</h1>
+<h1 style="text-align:center">Dragon Ball All Transformation Multipliers</h1>
 
-<a href="index.html" class="button-link">Power Levels</a>
+<a href="../index.html" class="button-link">Power Levels</a>
 
 <div id="character-container"></div>
 
@@ -16,7 +16,7 @@
     async function loadCharacters() {
         try {
             // Fetch the JSON file
-            const response = await fetch('highball.json');
+            const response = await fetch('multipliers.json');
             const characters = await response.json();
 
             const container = document.getElementById('character-container');
