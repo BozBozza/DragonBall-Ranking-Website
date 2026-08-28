@@ -10,16 +10,13 @@
 
 <a href="multipliers/multipliers.html" class="button-link">Multipliers</a>
 <a href="info.html" class="button-link">Info</a>
-<a href="highball/highball.html" class="button-link">High Ball</a>
-<a href="chart/chart.html" class="button-link">Chart</a><br>
+<a href="guess.html" class="button-link">Guessing Game</a>
 
 <div id="series-filter-menu"></div>
 
 <div id="character-filter-menu"></div>
 
 <div id="character-container"></div>
-
-<div id="wiki-preview"></div>
 
 
 <script>
@@ -82,71 +79,15 @@
     function renderDisplay(dataToShow) {
         const container = document.getElementById('character-container');
 
-        container.innerHTML = dataToShow.map((char, index) => `
+        container.innerHTML = dataToShow.map(char => `
             <div class="character-card" style="border:3px solid ${char.border};">
                 <span class="powerlevel">${char.powerlevel}</span>
-                <img src="${char.image}" style="border:3px solid ${char.border};" data-index="${index}">
+                <img src="${char.image}" style="border:3px solid ${char.border};">
                 <h2>${char.name}</h2>
                 <p>${char.form}</p>
                 <p>${char.info}</p>
             </div>
         `).join('');
-
-        // remember which list is currently on screen, so the preview can look up details
-        currentlyShown = dataToShow;
-    }
-
-    // ---- Wikipedia-style hover preview ----
-    let currentlyShown = [];
-    let previewTimer = null;
-
-    const preview = document.getElementById('wiki-preview');
-
-    document.addEventListener('mouseover', (e) => {
-        const img = e.target.closest('.character-card img');
-        if (!img) return;
-
-        const char = currentlyShown[img.dataset.index];
-        if (!char) return;
-
-        // small delay before showing, like Wikipedia
-        clearTimeout(previewTimer);
-        previewTimer = setTimeout(() => {
-            preview.innerHTML = `
-                <img src="${char.image}">
-                <p>${char.description ?? 'null'}</p>
-            `;
-            positionPreview(img);
-            preview.style.display = 'block';
-        }, 300);
-    });
-
-    document.addEventListener('mouseout', (e) => {
-        const img = e.target.closest('.character-card img');
-        if (!img) return;
-        clearTimeout(previewTimer);
-        preview.style.display = 'none';
-    });
-
-    function positionPreview(img) {
-        const rect = img.getBoundingClientRect();
-        // make it visible but off-screen so we can measure its size
-        preview.style.display = 'block';
-        preview.style.left = '-9999px';
-        const pw = preview.offsetWidth;
-        const ph = preview.offsetHeight;
-
-        // prefer to the right of the image; flip left if it would go off screen
-        let left = rect.right + 12;
-        if (left + pw > window.innerWidth) {
-            left = rect.left - pw - 12;
-        }
-        // vertically centre on the image, but keep it on screen
-        let top = rect.top + rect.height / 2 - ph / 2;
-        top = Math.max(10, Math.min(top, window.innerHeight - ph - 10));
-
-        preview.style.left = left + 'px';
-        preview.style.top = top + 'px';
     }
 
     loadCharacters();

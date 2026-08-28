@@ -152,37 +152,6 @@ body {
     color: white;
 }
 
-/* hover description box */
-#wiki-preview {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    width: 260px;
-    background: #fff;
-    color: #333;
-    border: 1px solid #a2a9b1;
-    border-radius: 4px;
-    overflow: hidden;
-    font-size: 0.85em;
-    line-height: 1.4;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    pointer-events: none;
-}
-
-#wiki-preview img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    display: block;
-    background: #eee;
-}
-
-#wiki-preview p {
-    margin: 0;
-    padding: 12px 16px;
-}
-
 /* ---- horizontal flow chart ---- */
 #flow-scroll {
     overflow-x: auto;
