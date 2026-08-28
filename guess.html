@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Higher Power Level</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #game {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 10px 20px 40px;
+            text-align: center;
+        }
+
+        #scoreboard {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin: 20px 0 10px;
+        }
+
+        .score-box {
+            border: 3px solid #ea841b;
+            border-radius: 20px;
+            background: #f9f9f9;
+            padding: 8px 20px;
+            min-width: 90px;
+        }
+
+        .score-box .label {
+            display: block;
+            font-size: 0.7em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #777;
+        }
+
+        .score-box .value {
+            display: block;
+            font-size: 1.6em;
+            font-weight: bold;
+        }
+
+        #prompt {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin: 15px 0 5px;
+        }
+
+        #versus {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .choice {
+            width: 300px;
+            border: 3px solid #ddd;
+            border-radius: 30px;
+            background: #f9f9f9;
+            padding: 15px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.15s, box-shadow 0.15s;
+        }
+
+        /* only pickable before the answer is shown */
+        .choice.locked {
+            cursor: default;
+        }
+
+        .choice:not(.locked):hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+        }
+
+        .choice img {
+            width: 240px;
+            height: 240px;
+            border-radius: 30%;
+            border: 3px solid #ddd;
+            object-fit: cover;
+            background-color: #eee;
+        }
+
+        .choice h2 {
+            margin: 8px 1px 1px;
+            font-size: 1.35em;
+        }
+
+        .choice p {
+            font-size: 0.8em;
+            color: #777;
+            font-style: italic;
+            margin: 1px;
+        }
+
+        /* holds its height while hidden so the cards don't jump on reveal */
+        .choice .reveal {
+            display: block;
+            font-weight: bold;
+            font-size: 1.3em;
+            margin-top: 8px;
+            min-height: 1.3em;
+            visibility: hidden;
+        }
+
+        .choice.revealed .reveal {
+            visibility: visible;
+        }
+
+        .choice.correct {
+            border-color: #2e9e4f;
+            background: #eaf7ee;
+        }
+
+        .choice.wrong {
+            border-color: #c0392b;
+            background: #fbeae8;
+            opacity: 0.75;
+        }
+
+        #vs-label {
+            font-size: 2em;
+            font-weight: bold;
+            color: #ea841b;
+        }
+
+        #result {
+            font-size: 1.4em;
+            font-weight: bold;
+            min-height: 1.6em;
+            margin: 20px 0 5px;
+        }
+
+        #result.right { color: #2e9e4f; }
+        #result.nope  { color: #c0392b; }
+
+        #next-btn {
+            padding: 12px 30px;
+            font-size: 1em;
+            font-family: inherit;
+            font-weight: bold;
+            background: #ea841b;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            visibility: hidden;
+        }
+
+        #next-btn.show {
+            visibility: visible;
+        }
+
+        #hint {
+            font-size: 0.8em;
+            color: #777;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1 style="text-align:center">Which Power Level Is Higher?</h1>
+
+<a href="index.html" class="button-link">Rankings</a>
+<a href="multipliers/multipliers.html" class="button-link">Multipliers</a>
+<a href="info.html" class="button-link">Info</a>
+
+<div id="game">
+    <div id="scoreboard">
+        <div class="score-box"><span class="label">Score</span><span class="value" id="score">0</span></div>
+    </div>
+
+    <p id="prompt">Click the character you think has the higher power level.</p>
+
+    <div id="versus"></div>
+
+    <p id="result"></p>
+    <button id="next-btn" onclick="nextRound()">Next Round &rarr;</button>
+
+    <p id="hint">Use &larr; / &rarr; to pick, Space or Enter for the next round.</p>
+</div>
+
+<script>
+    // the two characters are always this close together in the list, so their
+    // power levels are near enough to make the guess hard
+    const MAX_GAP = 3;
+
+    // short-scale suffixes used in powerlevels.json -> power of ten
+    const SCALES = {
+        '': 0,
+        thousand: 3,
+        million: 6,
+        billion: 9,
+        trillion: 12,
+        quadrillion: 15,
+        quintillion: 18,
+        sextillion: 21,
+        septillion: 24,
+        octillion: 27,
+        nonillion: 30,
+        decillion: 33,
+        undecillion: 36,
+        duodecillion: 39,
+        tredecillion: 42,
+        quattuordecillion: 45,
+        quindecillion: 48
+    };
+
+    let characters = [];
+    let score = 0;
+    let current = null;   // { left, right } while a round is in play
+    let answered = false;
+
+    // "12.8 Quindecillion" / "760,000" -> a number we can compare
+    function powerValue(text) {
+        const parts = String(text).trim().split(/\s+/);
+        const amount = parseFloat(parts[0].replace(/,/g, ''));
+        const scale = SCALES[(parts[1] || '').toLowerCase()] || 0;
+        return amount * Math.pow(10, scale);
+    }
+
+    async function loadCharacters() {
+        try {
+            const response = await fetch('powerlevels.json');
+            const data = await response.json();
+            characters = data.map((char, index) => ({ ...char, index, value: powerValue(char.powerlevel) }));
+            nextRound();
+        } catch (error) {
+            console.error("Error loading characters:", error);
+            document.getElementById('versus').innerHTML = '<p>Could not load powerlevels.json.</p>';
+        }
+    }
+
+    function pickPair() {
+        while (true) {
+            const first = Math.floor(Math.random() * characters.length);
+
+            // every character within MAX_GAP places of it, minus the ones on the
+            // same power level (a few entries share one) where neither answer
+            // would be right
+            const neighbours = [];
+            for (let step = -MAX_GAP; step <= MAX_GAP; step++) {
+                const other = characters[first + step];
+                if (step === 0 || !other) continue;
+                if (other.value === characters[first].value) continue;
+                neighbours.push(other);
+            }
+            if (!neighbours.length) continue;
+
+            const a = characters[first];
+            const b = neighbours[Math.floor(Math.random() * neighbours.length)];
+            // the stronger one is on either side, not always the same one
+            return Math.random() < 0.5 ? { left: a, right: b } : { left: b, right: a };
+        }
+    }
+
+    function renderRound() {
+        document.getElementById('versus').innerHTML = `
+            ${choiceHtml(current.left, 'left')}
+            <span id="vs-label">VS</span>
+            ${choiceHtml(current.right, 'right')}
+        `;
+    }
+
+    function choiceHtml(char, side) {
+        return `
+            <div class="choice" id="choice-${side}" style="border:3px solid ${char.border};" onclick="guess('${side}')">
+                <img src="${char.image}" style="border:3px solid ${char.border};">
+                <h2>${char.name}</h2>
+                <p>${char.form}</p>
+                <p>${char.info}</p>
+                <span class="reveal">${char.powerlevel}</span>
+            </div>
+        `;
+    }
+
+    function guess(side) {
+        if (answered) return;
+        answered = true;
+
+        const picked = current[side];
+        const other = side === 'left' ? current.right : current.left;
+        const isRight = picked.value > other.value;
+
+        // a run rather than a total: one wrong answer wipes it back to zero
+        score = isRight ? score + 1 : 0;
+        document.getElementById('score').textContent = score;
+
+        // green on the stronger character, red on the weaker one
+        const winner = picked.value > other.value ? side : (side === 'left' ? 'right' : 'left');
+        const loser = winner === 'left' ? 'right' : 'left';
+        markChoice(winner, 'correct');
+        markChoice(loser, 'wrong');
+
+        const result = document.getElementById('result');
+        result.className = isRight ? 'right' : 'nope';
+        const stronger = isRight ? picked : other;
+        result.textContent = `${isRight ? 'Correct!' : 'Wrong!'} ${stronger.name} (${stronger.form}) is stronger.`;
+
+        document.getElementById('next-btn').classList.add('show');
+    }
+
+    function markChoice(side, state) {
+        const card = document.getElementById('choice-' + side);
+        card.classList.add('locked', 'revealed', state);
+        // the inline border colour would otherwise beat the green/red class
+        card.style.borderColor = state === 'correct' ? '#2e9e4f' : '#c0392b';
+    }
+
+    function nextRound() {
+        answered = false;
+        current = pickPair();
+        renderRound();
+        const result = document.getElementById('result');
+        result.textContent = '';
+        result.className = '';
+        document.getElementById('next-btn').classList.remove('show');
+    }
+
+    document.addEventListener('keydown', event => {
+        if (!answered && event.key === 'ArrowLeft') guess('left');
+        else if (!answered && event.key === 'ArrowRight') guess('right');
+        else if (answered && (event.key === 'Enter' || event.key === ' ')) {
+            event.preventDefault();
+            nextRound();
+        }
+    });
+
+    loadCharacters();
+</script>
+</body>
+</html>
