@@ -113,18 +113,18 @@
   },
   {
     "powerlevel": "4 Million x",
-    "name": "Super Saiyan Blue",
-    "image": "https://static.wikia.nocookie.net/dragonball/images/2/2f/Super_Saiyan_Blue_Kaio-ken_%28manga%29.png/revision/latest/scale-to-width-down/1040?cb=20230314212834",
-    "form": "Goku",
-    "info": "Resurrection F Saga",
-    "border": "#7982EA"
-  },
-  {
-    "powerlevel": "3.91 Million x",
     "name": "Orange Form",
     "image": "https://static.wikia.nocookie.net/dragonball/images/2/2b/Orange_Piccolo_%28manga%29.png/revision/latest/scale-to-width/360?cb=20240705003005",
     "form": "Piccolo",
     "info": "Superhero Movie",
+    "border": "#7982EA"
+  },
+  {
+    "powerlevel": "4 Million x",
+    "name": "Super Saiyan Blue",
+    "image": "https://static.wikia.nocookie.net/dragonball/images/2/2f/Super_Saiyan_Blue_Kaio-ken_%28manga%29.png/revision/latest/scale-to-width-down/1040?cb=20230314212834",
+    "form": "Goku",
+    "info": "Resurrection F Saga",
     "border": "#7982EA"
   },
   {
@@ -176,7 +176,7 @@
     "border": "#98B17B"
   },
   {
-    "powerlevel": "19,565x",
+    "powerlevel": "20,000x",
     "name": "Potential Unlocked",
     "image": "https://i.redd.it/whos-ultimate-potential-unleashed-form-do-you-like-more-v0-ld8g139g96ic1.jpg?width=1920&format=pjpg&auto=webp&s=0670a9be75cee01f1a499c4d023f4639655580b6",
     "form": "Piccolo",
@@ -232,20 +232,20 @@
     "border": "#B42B2B"
   },
   {
+    "powerlevel": "450x",
+    "name": "Ultimate Form",
+    "image": "https://static.wikia.nocookie.net/dragonball/images/6/6a/Ultimate_Gohan_SH.PNG/revision/latest?cb=20240712174819",
+    "form": "Gohan",
+    "info": "Fusion Saga",
+    "border": "#ea841b"
+  },
+  {
     "powerlevel": "400x",
     "name": "Super Saiyan 3",
     "image": "https://static.wikia.nocookie.net/myscaling/images/6/6a/Ssj3.png/revision/latest?cb=20201114024923",
     "form": "Goku",
     "info": "Buu Saga",
     "border": "#9E64E0"
-  },
-  {
-    "powerlevel": "350.36x",
-    "name": "Ultimate Form",
-    "image": "https://static.wikia.nocookie.net/dragonball/images/6/6a/Ultimate_Gohan_SH.PNG/revision/latest?cb=20240712174819",
-    "form": "Gohan",
-    "info": "Fusion Saga",
-    "border": "#ea841b"
   },
   {
     "powerlevel": "226.42x",
@@ -350,6 +350,14 @@
     "form": "Dyspo",
     "info": "Tournament of Power Saga",
     "border": "#7982EA"
+  },
+  {
+    "powerlevel": "40x",
+    "name": "Meta Form",
+    "image": "https://static.wikia.nocookie.net/dragonball/images/b/b4/Meta-Rilldo_World.jpg/revision/latest?cb=20240918011315",
+    "form": "General Rildo",
+    "info": "Black Star Dragonball Saga",
+    "border": "#B42B2B"
   },
   {
     "powerlevel": "40x",

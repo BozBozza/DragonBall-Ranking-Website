@@ -176,7 +176,7 @@
     "border": "#7982EA"
   },
   {
-    "powerlevel": "1.2 Duodecillion",
+    "powerlevel": "1.2 Tredecillion",
     "name": "Vegeta",
     "image": "https://i.redd.it/tr4u9bs643gd1.jpeg",
     "form": "Super Saiyan Blue Evolved",
@@ -368,7 +368,7 @@
     "border": "#7982EA"
   },
   {
-    "powerlevel": "148 Decillion",
+    "powerlevel": "115.6 Decillion",
     "name": "Gohan",
     "image": "https://static0.cbrimages.com/wordpress/wp-content/uploads/2021/12/Dragon-Ball-Super-Jump-Festa.jpg",
     "form": "Base",
@@ -816,7 +816,7 @@
     "border": "#7982EA"
   },
   {
-    "powerlevel": "57.1 Septillion",
+    "powerlevel": "44.4 Septillion",
     "name": "Gohan",
     "image": "https://preview.redd.it/ultimate-gohans-hair-v0-xqvjsvtwwer91.jpg?width=1280&format=pjpg&auto=webp&s=2c8124b4304e674367bd9c9dcc8aa7e6c3bec91d",
     "form": "Base",
@@ -1256,6 +1256,14 @@
     "border": "#B42B2B"
   },
   {
+    "powerlevel": "200 Quintillion",
+    "name": "General Rildo",
+    "image": "https://static.wikia.nocookie.net/dragonball/images/6/60/Gt-20-4.jpg/revision/latest/scale-to-width-down/340?cb=20240918003926",
+    "form": "Meta Form",
+    "info": "Black Star Dragonball Saga",
+    "border": "#B42B2B"
+  },
+  {
     "powerlevel": "147 Quintillion",
     "name": "Uub",
     "image": "https://pbs.twimg.com/media/Gwo9nu4XQAALS-v.jpg",
@@ -1312,9 +1320,25 @@
     "border": "#7982EA"
   },
   {
+    "powerlevel": "8 Quintillion",
+    "name": "General Rildo",
+    "image": "https://static.wikia.nocookie.net/dragonball/images/5/54/Baby19.jpg/revision/latest?cb=20240918012603",
+    "form": "Hyper Meta Form",
+    "info": "Black Star Dragonball Saga",
+    "border": "#B42B2B"
+  },
+  {
     "powerlevel": "6 Quintillion",
     "name": "Goku",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0NrZR747O9I2EzWkCj4TfzXiFQp9yK9tFKw&s",
+    "form": "Base",
+    "info": "Black Star Dragonball Saga",
+    "border": "#B42B2B"
+  },
+  {
+    "powerlevel": "5 Quintillion",
+    "name": "General Rildo",
+    "image": "https://static.wikia.nocookie.net/dragonball/images/c/c8/9._General_Rilldo_battle_stance.png/revision/latest/scale-to-width-down/250?cb=20240918043902",
     "form": "Base",
     "info": "Black Star Dragonball Saga",
     "border": "#B42B2B"
@@ -1342,6 +1366,14 @@
     "form": "Final Form",
     "info": "Resurrection F Saga",
     "border": "#7982EA"
+  },
+  {
+    "powerlevel": "3 Quintillion",
+    "name": "Super Mega Cannon Sigma",
+    "image": "https://static.wikia.nocookie.net/dragonball/images/c/c2/Super_Mega_Cannon_Sigma_over_confident.png/revision/latest?cb=20240919032201",
+    "form": "Base",
+    "info": "Black Star Dragonball Saga",
+    "border": "#B42B2B"
   },
   {
     "powerlevel": "2.4 Quintillion",
@@ -1392,7 +1424,7 @@
     "border": "#B42B2B"
   },
   {
-    "powerlevel": "640 Quadrillion",
+    "powerlevel": "690 Quadrillion",
     "name": "Vegeta",
     "image": "https://comicvine.gamespot.com/a/uploads/original/11115/111158605/4469460-1242595411227_f.jpg",
     "form": "Super Saiyan",
@@ -1400,7 +1432,7 @@
     "border": "#B42B2B"
   },
   {
-    "powerlevel": "500 Quadrillion",
+    "powerlevel": "650 Quadrillion",
     "name": "Gohan",
     "image": "https://preview.redd.it/baby-gohan-going-super-saiyan-v0-96ue2srh7a9f1.gif?format=png8&s=9b0d27c0022cac799d807b84615abeca960d4ad5",
     "form": "Super Saiyan",
@@ -1448,14 +1480,6 @@
     "border": "#B42B2B"
   },
   {
-    "powerlevel": "24.2 Quadrillion",
-    "name": "Buu",
-    "image": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/06/buuhan-from-dbz.jpg",
-    "form": "Gohan Absorbed",
-    "info": "Fusion Saga",
-    "border": "#ea841b"
-  },
-  {
     "powerlevel": "24 Quadrillion",
     "name": "Hirudegarn",
     "image": "https://static.wikia.nocookie.net/dragonball/images/e/e3/Dragonball_Z_-_Movie_13_-_Wrath_of_the_Dragon_203_0001.jpg/revision/latest/scale-to-width-down/340?cb=20111124192149",
@@ -1486,6 +1510,14 @@
     "form": "Super Form",
     "info": "Fusion Reborn",
     "border": "#98B17B"
+  },
+  {
+    "powerlevel": "19.4 Quadrillion",
+    "name": "Buu",
+    "image": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/06/buuhan-from-dbz.jpg",
+    "form": "Gohan Absorbed",
+    "info": "Fusion Saga",
+    "border": "#ea841b"
   },
   {
     "powerlevel": "17.8 Quadrillion",
@@ -1529,6 +1561,14 @@
   },
   {
     "powerlevel": "13.8 Quadrillion",
+    "name": "Vegeta",
+    "image": "https://static.wikia.nocookie.net/dragonuniverse/images/e/e1/Vegeta_GT.png/revision/latest?cb=20241108192854",
+    "form": "Base",
+    "info": "Baby Saga",
+    "border": "#B42B2B"
+  },
+  {
+    "powerlevel": "13.8 Quadrillion",
     "name": "Goku",
     "image": "https://static.wikia.nocookie.net/dragonball/images/c/cd/Goku_happy_to_fight_Uub.jpg/revision/latest/scale-to-width-down/250?cb=20120601111551",
     "form": "Base",
@@ -1536,12 +1576,20 @@
     "border": "#ea841b"
   },
   {
-    "powerlevel": "12.8 Quadrillion",
-    "name": "Vegeta",
-    "image": "https://static.wikia.nocookie.net/dragonuniverse/images/e/e1/Vegeta_GT.png/revision/latest?cb=20241108192854",
+    "powerlevel": "13 Quadrillion",
+    "name": "Gohan",
+    "image": "https://static.wikia.nocookie.net/dragonuniverse/images/9/9c/Son_Gohan_GT.png/revision/latest/scale-to-width-down/1200?cb=20250401135408",
     "form": "Base",
     "info": "Baby Saga",
     "border": "#B42B2B"
+  },
+  {
+    "powerlevel": "12.4 Quadrillion",
+    "name": "Gohan",
+    "image": "https://static.wikia.nocookie.net/dragonball/images/4/4c/You_Redacted.png/revision/latest?cb=20230119041650",
+    "form": "Ultimate Form",
+    "info": "Fusion Saga",
+    "border": "#ea841b"
   },
   {
     "powerlevel": "12 Quadrillion",
@@ -1605,22 +1653,6 @@
     "image": "https://preview.redd.it/oh-buu-saga-goku-why-do-they-hate-your-saga-v0-88ogmxpgg5of1.jpeg?auto=webp&s=e9f803bb131ede36a6938b79f58423e36c98e717",
     "form": "Super Saiyan 3",
     "info": "Buu Saga",
-    "border": "#ea841b"
-  },
-  {
-    "powerlevel": "10 Quadrillion",
-    "name": "Gohan",
-    "image": "https://static.wikia.nocookie.net/dragonuniverse/images/9/9c/Son_Gohan_GT.png/revision/latest/scale-to-width-down/1200?cb=20250401135408",
-    "form": "Base",
-    "info": "Baby Saga",
-    "border": "#B42B2B"
-  },
-  {
-    "powerlevel": "9.6 Quadrillion",
-    "name": "Gohan",
-    "image": "https://static.wikia.nocookie.net/dragonball/images/4/4c/You_Redacted.png/revision/latest?cb=20230119041650",
-    "form": "Ultimate Form",
-    "info": "Fusion Saga",
     "border": "#ea841b"
   },
   {
@@ -1872,7 +1904,7 @@
     "border": "#9E64E0"
   },
   {
-    "powerlevel": "27.4 Trillion",
+    "powerlevel": "27.5 Trillion",
     "name": "Gohan",
     "image": "https://static.wikia.nocookie.net/dragonball/images/d/dc/GohanInKaiCostumeWithZSword.jpg/revision/latest?cb=20110508000925",
     "form": "Base",
